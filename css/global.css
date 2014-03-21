@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+a.button {
+	text-indent: -999em;
+	display: block;
+	background: transparent no-repeat left top;
+}
+
+#body {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#title {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	background: transparent url('../images/bg_title.png') repeat left top;
+}
+
+#title span {
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Monda', sans-serif;
+}
+
+.image_container {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	display: block;
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
+	background: transparent;
+}
+
+/* Side Nav */
+#side_nav {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+#prev {
+	position: absolute;
+	left: 2px;
+	top: 45%;
+	width: 30px;
+	height: 60px;
+}
+
+#prev a {
+	background: transparent url('../images/arrow_prev.png') no-repeat left top;
+	width: 100%;
+	height: 100%;
+}
+
+#prev a:hover {
+	background-image: url('../images/arrow_prev_hover.png')
+}
+
+#next {
+	position: absolute;
+	right: 2px;
+	top: 45%;
+	width: 30px;
+	height: 60px;
+}
+
+#next a {
+	background: transparent url('../images/arrow_next.png') no-repeat left top;
+	width: 100%;
+	height: 100%;
+}
+
+#next a:hover {
+	background-image: url('../images/arrow_next_hover.png')
+}
+

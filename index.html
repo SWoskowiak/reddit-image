@@ -1,0 +1,42 @@
+<?php
+	$subreddits = '';
+	foreach($_REQUEST as $key => $val) {
+		$subreddits .= $key.'.';
+	}
+	$subreddits = trim($subreddits, '.');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Subreddit Viewer</title>
+	<meta name="generator" content="BBEdit 10.1">
+	<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/global.css" media="screen">
+	<script src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+	  google.load("jquery", "1");
+	</script>
+	<script src="js/global.js"></script>
+</head>
+<body>
+	<div id="body">
+		<div id="image_body">
+			<div class="image_container"><img></div>
+		</div>
+		<div id="title">
+			<span></span>
+		</div>
+		<ul id="side_nav">
+			<li id="prev" data-target="prev">
+				<a class="button" href="#" title="Previus">Previus</a>
+			</li>
+			<li id="next" data-target="next">
+				<a class="button" href="#" title="Next">Next</a>
+			</li>
+		</ul>
+			
+		</div>
+		<div id="targets" data-subreddits="<?=$subreddits;?>" style="display:none"></div>
+	</div>
+</body>
